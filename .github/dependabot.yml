@@ -24,3 +24,14 @@ updates:
       - dependency-name: mocha
         versions:
           - ">= 9.0.0"
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "rewindio/devops"
+    labels:
+      - "appsec"
+    open-pull-requests-limit: 10
